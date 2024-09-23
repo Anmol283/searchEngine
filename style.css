@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige; /* Lighter background for contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+.written {
+    height: 100px;
+    width: 350px;
+    border-radius: 50px;
+    background-color: rgb(208, 138, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.written h1 {
+    margin: 0;
+    font-size: 24px; /* Larger font for better visibility */
+    color: #4b2c4c; /* Darker text color */
+    text-align: center; /* Center text without <center> tag */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Added margin for spacing */
+    background: rgb(211, 138, 138);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%; /* Responsive width */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px; /* Increased padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+    font-size: 16px; /* Slightly larger font size */
+}
+
+input[type="text"]:focus {
+    border-color: maroon; /* Focus color */
+    outline: none; /* Remove outline */
+}
+
+button {
+    padding: 10px 20px; /* Slightly wider buttons */
+    border: none;
+    border-radius: 4px;
+    background-color: maroon;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Add transform for hover */
+}
+
+button:hover {
+    background-color: #5c2a2a; 
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+#clearHistoryButton {
+    margin-left: 10px; /* Fixed syntax error */
+}
+
+#searchHistory {
+    margin-top: 20px; /* Spacing for search history */
+}
+
+#searchHistory div {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px; /* Rounded corners */
+    background-color:whitesmoke; /* Background for items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.history-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
